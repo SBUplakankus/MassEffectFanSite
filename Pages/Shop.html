@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<script src="../Java/java.js"></script>
+
+<head>
+    <title>Mass Effect - Shop</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+</head>
+<video class = "popup" src="/Videos/Reapers.mp4" id="popup"></video>
+<body>
+    <!-- NAV -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>             
+            <li>                                                
+                <a href="">ME: Games</a>                       
+                <ul class="Dropdown">                           
+                    <li><a href="ME1.html">Mass Effect</a></li>
+                    <li><a href="#">Mass Effect 2</a></li>
+                    <li><a href="#">Mass Effect 3</a></li>
+                </ul>
+            </li>                                               
+            <li>
+                <a href="">Universe Lore</a>
+                <ul class="Dropdown">
+                    <li><a href="#">Worlds</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="#">Species</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Development</a>
+                <ul class="Dropdown">
+                    <li><a href="#">Writing</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Production</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Voice Actors</a>
+                <ul class="Dropdown">
+                    <li><a href="Shepard.html">Shepard</a></li>
+                    <li><a href="#">Companions</a></li>
+                    <li><a href="#">Allies</a></li>
+                    <li><a href="#">Enemies</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Extras</a>
+                <ul class="Dropdown">
+                    <li><a href="Trailers.html">Trailers</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section class="shop" id="wholeShop">
+        <!-- SECTION WITH ALL OF THE ITEMS -->
+        <section class="shopPage">
+            <!-- EACH OF THE ITEMS, THEY ARE DISPLAYED IN A FLEX GRID -->
+            <div class="shopItem">
+                <!-- IMAGE CONTAINER SO THE ZOOM EFFECT CAN BE CONTROLLED WITH THE IMAGE INSIDE -->
+                <div class="shopImg">
+                    <img src="/Images/DuckShep.jpg">
+                </div>
+                <!-- NAME AND COST OF EACH ITEM -->
+                <h4 id ="duckShepName" value="Rubber Duck Shepard">Rubber Duck Shepard</h4>
+                <h4 id="duckShepCost" value = "15.00">$15.00</h4>
+                <!-- QUANTITY SELECTER WITH VALUES FOR EQUATIONS IN JAVA -->
+                <div class="custom-select">
+                    <select id="duckShepQuantity">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                </div>
+               <!--  BUTTON THAT TRIGGERS THE FUNCTION TO DO THE MATHS AND ADD THE ITEM TO THE CART -->
+                <button class="Cart" id="duckShepCart" onclick="addDuckShep()">Add to Cart</button>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="/Images/DuckGarrus.jpg">
+                </div>
+                <h4 id ="duckGarrusName">Rubber Duck Garrus</h4>
+                <h4 id="duckGarrusCost" value = "15.00">$15.00</h4>
+                <div class="custom-select">
+                    <select id="duckGarrusQuantity">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                </div>
+                <button class="Cart" id="duckGarrusCart" onclick="addDuckGarrus()">Add to Cart</button>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="/Images/Helmet.jpg">
+                </div>
+                <h4 id ="helmetName">Replica Helmet</h4>
+                <h4 id="helmetCost" value = "95.00">$95.00</h4>
+                <div class="custom-select">
+                    <select id="helmetQuantity">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                </div>
+                <button class="Cart" id="helmetCart" onclick="addHelmet()">Add to Cart</button>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="/Images/bag.jpg">
+                </div>
+                <h4 id ="bagName">Archangel Bag</h4>
+                <h4 id="bagCost" value = "35.00">$35.00</h4>
+                <div class="custom-select">
+                    <select id="bagQuantity">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                </div>
+                <button class="Cart" id="bagCart" onclick="addBag()">Add to Cart</button>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="/Images/slipper.jpg">
+                </div>
+                <h4 id ="slippersName">N7 Slippers</h4>
+                <h4 id="slippersCost" value = "25.00">$25.00</h4>
+                <div class="custom-select">
+                    <select id="slippersQuantity">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                </div>
+                <button class="Cart" id="slippersCart" onclick="addSlippers()">Add to Cart</button>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="/Images/led.jpg">
+                </div>
+                <h4 id ="ledName">LED Sign</h4>
+                <h4 id="ledCost" value = "55.00">$55.00</h4>
+                <div class="custom-select">
+                    <select id="ledQuantity">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                </div>
+                <button class="Cart" id="ledCart" onclick="addLED()">Add to Cart</button>
+            </div>
+        </section>
+       <!--  SHOPPING CART OUTPUT AND RECEIPTS SECTION -->
+        <section class="shopOutput"><!-- OVAL SHAPED CONTAINER EVERYTHING FITS INTO -->
+            <h3>Shopping Cart</h3> <!-- HEADING THAT STAYS THE SAME AT THE TOP -->
+            <textarea readonly id ="cartInfo" rows="16" cols="50" disabled></textarea> <!-- TEXT AREA WHERE THE ITEMS INFO GETS OUTPUT WHEN ADDED -->
+            <h2>Total: $</h2><textarea readonly disabled rows="1" id = "cartTotal" class="h2"></textarea> <!-- CONSTANT TOTAL HEADING FOLLOWED BY ANOTHER TEXT AREA THAT CHANGES WITH THE TOTAL COST OF THE CART -->
+            <button onclick="popup()" id="checkout">Checkout</button> <!-- CHECKOUT BUTTON AT THE BOTTOM THAT TRIGGERS THE SURPRISE WHEN CLICKED -->
+        </section>
+    </section>
+    
+    
+    <!-- STUFF USED IN PAGE  -->
+
+    <!-- https://w3bits.com/css-image-hover-zoom/
+    https://www.amazon.com/TUBBZ-Garrus-Vakarian-Collectible-Rubber/dp/B0CJYC9SXH
+    https://www.amazon.com/Dark-Horse-Deluxe-Effect-Alliance/dp/B08F813FML
+    https://www.amazon.com/X-COSTUME-Legendary-Cosplay-Halloween-Merchandise/dp/B095SJR6QW
+    https://gear.bioware.com/en-eu/products/mass-effect-archangel-dopp-bag
+    https://gear.bioware.com/en-eu/products/mass-effect-blue-normandy-led-wall-art
+ -->
+    
+    
+    

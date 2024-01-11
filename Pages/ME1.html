@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Mass Effect - Mass Effect</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>             
+            <li>                                                
+                <a href="">ME: Games</a>                       
+                <ul class="Dropdown">                           
+                    <li><a href="ME1.html">Mass Effect</a></li>
+                    <li><a href="#">Mass Effect 2</a></li>
+                    <li><a href="#">Mass Effect 3</a></li>
+                </ul>
+            </li>                                               
+            <li>
+                <a href="">Universe Lore</a>
+                <ul class="Dropdown">
+                    <li><a href="#">Worlds</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="#">Species</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Development</a>
+                <ul class="Dropdown">
+                    <li><a href="#">Writing</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Production</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Voice Actors</a>
+                <ul class="Dropdown">
+                    <li><a href="Shepard.html">Shepard</a></li>
+                    <li><a href="#">Companions</a></li>
+                    <li><a href="#">Allies</a></li>
+                    <li><a href="#">Enemies</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Extras</a>
+                <ul class="Dropdown">
+                    <li><a href="Trailers.html">Trailers</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- LEFT SIDE OF THE PAGE THAT CONTAINS THE TEXT USING A BOX THAT SPLITS THE PAGE IN HALF THEN ANOTHER BOX INSIDE TO CONTAIN THE TEXT -->
+    <section class="gamePage">
+        <div class = "gameInfo">
+            <div class = "gameText">
+                <h1>Mass Effect</h1>
+            <p>
+                Mass Effect 1 was released by BioWare in 2007 on the PS3, Xbox 360 and PC to critical acclaim. As the first game of
+                the trilogy, it introduces the players to Commander Shepard, and the first iteration of his crew. Most of whom would go on
+                to have featured roles in the series.<br><br>
+
+                Set in the year 2183 we are introduced to a new universe where humanity are considered newcomers, looked down upon by the
+                rest of the galaxy for their brash and unpredictable nature. While onboard the SSV Normandy, Shepard and his crew are sent to
+                investigate the Human colony of Eden Prime.<br><br>
+                
+                The whole planet has gone dark shortly after scientists at the colony reported the discovery of a mysterious 
+                alien artifact. Under the watch of one of the councils infamous Spectres, the story of Commander Shepard begins here.
+            </p>
+            </div>
+        </div>
+        <!-- RIGHT SIDE OF THE PAGE THAT CONTAINS THE IMAGE -->
+        <div class = "gameImage">
+            <img src="../Images/ME1Cover.jpg">
+        </div>
+    </section>
+    <!-- SLIDESHOW AT THE BOTTOM OF THE PAGE -->
+    <section class="slideshow">
+        <!-- EACH SLIDE AND IMAGE -->
+        <div class="slides">
+            <img src="/Images/MEi.jpg">
+        </div>
+        <div class="slides">
+            <img src="/Images/MEii.jpg">
+        </div>
+        <div class="slides">
+            <img src="/Images/MEiii.jpg">
+        </div>
+        <div class="slides">
+            <img src="/Images/MEiv.jpg">
+        </div>
+        <div class="slides">
+            <img src="/Images/MEv.jpg">
+        </div>
+        <!-- ARROWS ON THE SIDE THAT CHANGE SLIDE WHEN CLICKED -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <br>
+    <!-- DOTS UNDERNEATH THE SLIDESHOW THAT CAN CHOOSE A SPECIFIC SLIFE TO GO TO -->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <!-- //JAVASCRIPT -->
+    <script src="../Java/java.js"></script>
+    <footer>
+        <p>
+            Website made by Seán Burke 2023 -       Mass Effect is copyrighted and owned by EA and BioWare - 
+            Only the Home / Voice Actors - Shepard / Games - Mass Effect / Pages are completed
+        </p>
+    </footer>
+</body>
+
+<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
